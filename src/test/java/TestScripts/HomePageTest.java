@@ -39,9 +39,10 @@ public class HomePageTest extends PageBaseClass{
 	}
 
 	@Test(priority=0)
-	public void searchRestaurant() throws IOException {
+	public void searchRestaurant() throws IOException, InterruptedException {
 		logger = report.createTest("Searching");
 		restaurantPage = homepage.search("Patel");
+		Thread.sleep(2000);
 		logger.log(Status.INFO, "First Search");
 		base.takeScreeenShot("2-search.jpg");
 		pageHeader = restaurantPage.getPageHeader();

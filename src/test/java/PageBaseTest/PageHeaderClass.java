@@ -18,7 +18,7 @@ public class PageHeaderClass extends PageBaseClass {
 	WebElement searchbar;
 	
 	@FindBys({ 
-		@FindBy(xpath="//*[@class='sc-1hez2tp-0 sc-kZmsYB lanEyU']") })
+		@FindBy(xpath="//*[@class='sc-lnmtFM ACCIP']") })
 	 java.util.List<WebElement> restaurants;
 	
 	public RestaurantPage search(String value) {

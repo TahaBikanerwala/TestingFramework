@@ -34,7 +34,7 @@ public class HomePage extends PageBaseClass{
 	WebElement search;
 	
 	@FindBys({ 
-		@FindBy(xpath="//div[@class='sc-FQuPU bQIMAA']") })
+		@FindBy(xpath="//div[@class='sc-blIhvV kCJuCl']") })
 	 java.util.List<WebElement> restaurants;
 	
 	
@@ -55,11 +55,4 @@ public class HomePage extends PageBaseClass{
 		restaurants.get(0).click();
 		return PageFactory.initElements(driver, RestaurantPage.class);
 	}
-	
-	
-
-	
-	
-	
-
 }
